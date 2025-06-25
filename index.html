@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE CULTURAR</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#catalogo">CATÁLOGO</a></li>
+                <li><a href="#privacidade">POLÍTICAS DE PRIVACIDADE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Viajando entre culturas, sabores e sons...</h1>
+            <p>Seja bem-vindo! Prepare-se para sua viagem!</p>
+            <img src="./img/logo_site.png" alt="Logo do site Culturar">
+        </section>
+
+        <!-- Primeira página -->
+        <section id="inicio">
+            <h2>Conhecendo um pouquinho mais do nosso site 💕</h2>
+            <div class="opcoes-site">
+                <h3>Aqui você encontra...👀</h3>
+                <ol>
+                    <li>I. Histórias e origens de cada parte do mundo.</li>
+                    <li>II. Fatos interessantes.</li>
+                    <li>III. Gastronomia típica ou ingredientes tradicionais.</li>
+                    <li>IV. Eventos culturais e oficinas.</li>
+                </ol>
+            </div>
+            <button class="proxima-pagina" onclick="mostrarSegundaPagina()">Seguir Adiante</button>
+        </section>
+
+        <!-- Segunda página -->
+        <section id="opcoes">
+            <h4>Escolha uma opção para continuar</h4>
+            <div class="container">
+                <img src="./img/imagem1.jpg" alt="Imagem representando história e origens">
+                <button class="opcao" id="historia">História e Origens</button>
+                <img src="./img/image2.png" alt="Imagem representando fatos interessantes">
+                <button class="opcao" id="fatos">Fatos Interessantes</button>
+                <img src="./img/imagem3.jpg" alt="Imagem representando gastronomia típica">
+                <button class="opcao" id="gastronomia">Gastronomia Típica</button>
+                <img src="./img/image4.png" alt="Imagem representando eventos e oficinas">
+                <button class="opcao" id="eventos">Eventos e Oficinas</button>
+            </div>
+            <button class="encerrar-viagem" onclick="mostrarTerceiraPagina()">Fim da Viagem</button>
+        </section>
+
+      <!-- Terceira página -->
+<section id="informações finais" style="display: none;">
+    <p>Aaaaaah... Sua viagem chegou ao fim 😢</p>
+    <h5>Muito obrigada por mergulhar de cabeça com a gente nesse mix de cultura que temos para te mostrar 💖</h5>
+    <h6>Ah cada minuto no nosso site, 2 reais são arrecadados para ONGs de animais e orfanatos. Para doações mais altas, entrar em contato com os nossos administradores </h6>
+    <footer class="rodape">Site Culturar é patrocinado pela empresa da Cola-Cola @cocacola.br e empresa Azul @azulinhasaereas</footer>
+    <footer class="rodape">ah cinco anos fazendo a diferença @culturar.oficial  culturar.oficial@gmail.com</footer>
+</section>
+
+<script>
+    // Esconde a segunda página inicialmente
+    document.getElementById('opcoes').style.display = 'none';
+
+    function mostrarSegundaPagina() {
+        document.getElementById('inicio').style.display = 'none'; // Esconde a primeira página
+        document.getElementById('opcoes').style.display = 'block'; // Mostra a segunda página
+    }
+
+    function mostrarTerceiraPagina() {
+        document.getElementById('opcoes').style.display = 'none'; // Esconde a segunda página
+        document.getElementById('informações finais').style.display = 'block'; // Mostra a terceira página
+    }
+</script>

@@ -1,0 +1,168 @@
+body{
+    background-color: #ffddb6;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav{
+    background-color: #ddb484;
+    width: 100%;
+    padding: 25px 0;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+ol{
+    justify-content: center;
+    display: block;
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav ul li{
+    margin: 0 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3 ease;
+}
+
+img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    
+}
+
+h1{
+    text-align: center;
+    width: 100%;
+}
+
+h2{
+    color: #704f28;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3{
+    color: #704f28;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* segunda página */
+h4{
+    color: #704f28;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+/* terceira página */
+h5{
+    color: #704f28;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+/* parágrafo que fica na navegação */
+p{
+    color: #704f28;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20;
+}
+
+/* parágrafo abaixo do h1 */
+p{
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+/* á cada minuto do nosso site */
+h6{
+    color: #704f28;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px; 
+}
+
+.rodape{
+    text-align: center;
+    padding: 20px;
+}
+
+/* botão para ir a segunda página */
+.proxima-pagina{ 
+    background: linear-gradient(#704f28, #ddb484);
+    color: white;
+    padding: 12px 40px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+    display: block;
+    margin: 0 auto;
+}
+
+/* botão para ir a terceira página */
+.encerrar-viagem{ 
+    background: linear-gradient(#704f28, #ddb484);
+    color: white;
+    padding: 12px 40px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.opcao{
+    background: linear-gradient(#704f28, #ddb484);
+    color: white;
+    padding: 12px 40px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+    display: block;
+    margin: auto;
+}
+
+img{
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Mantém o aspecto e preenche o espaço */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.container {
+    display: flex;
+    gap: 10px; 
+}
